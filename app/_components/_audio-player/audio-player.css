@@ -1,0 +1,60 @@
+.audio-player {
+  contain: content;
+  background-color: var(--b200);
+  color: var(--t200);
+  opacity: 1;
+  backdrop-filter: blur(20px);
+  border-radius: 11px;
+  padding: 0.5rem;
+  min-height: 440px;
+  max-height: 540px;
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-card.visible {
+  bottom: 20%;
+  opacity: 1;
+  visibility: visible;
+  background-color: var(--t100);
+  color: var(--b200);
+}
+
+.now-playing {
+  min-height: 4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.song-title:hover {
+  text-decoration: underline;
+}
+
+.song-timing {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.player-logo {
+  max-width: 300px;
+  height: auto;
+  margin-right: 1rem;
+  align-self: center;
+}

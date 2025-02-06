@@ -1,0 +1,22 @@
+.playlist-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+}
+
+.playlist-list-item,
+.playlist-list-button {
+  list-style: none;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--b100);
+}
+
+.playlist-list-item:hover,
+.playlist-list-button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
