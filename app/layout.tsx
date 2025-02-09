@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
-import { firaSansLight } from "@/_fonts/fonts";
-import "./queries.css";
+import {
+  Fira_Code
+} from "next/font/google";
+import Buttoncard from "./_components/_button-card/ButtonCard";
 import "./colors.css";
 import "./globals.css";
+import "./queries.css";
+
+export const FiraCode = Fira_Code({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-fira-code",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,9 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${firaSansLight.className} antialiased`}
+        className={FiraCode.variable}
       >
         {children}
+        <Buttoncard />
       </body>
     </html>
   );

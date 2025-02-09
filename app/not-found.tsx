@@ -6,9 +6,9 @@ export default function NotFound() {
   const router = useRouter();
 
   return (
-    <div className='can txt'>
+    <div className='grid place-items-center min-h-screen'>
       <h1 className="h1">Error 404: Page Not Found</h1>
-      <p className="txt">
+      <p className="">
         The page you are looking for does not exist or has been moved
       </p>
       <button

@@ -12,7 +12,7 @@
   padding: 0.5rem 0;
   font-size: 0.8rem;
   font-weight: 300;
-  color: var(--b100);
+  color: #333333ff;
 }
 
 .playlist-list-item:hover,

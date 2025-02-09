@@ -1,14 +1,10 @@
 .audio-player {
   contain: content;
-  background-color: var(--b200);
-  color: var(--t200);
+  background-color: transparent;
   opacity: 1;
   backdrop-filter: blur(20px);
   border-radius: 11px;
   padding: 0.5rem;
-  min-height: 440px;
-  max-height: 540px;
-  max-width: 90%;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -24,30 +20,35 @@
   bottom: 20%;
   opacity: 1;
   visibility: visible;
-  background-color: var(--t100);
-  color: var(--b200);
+  color: var(--b100);
 }
 
 .now-playing {
-  min-height: 4rem;
+  min-height: 6rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #333333ff;;
+  font-weight: 500;
+
 }
 
 .song-title {
+  color: #333333ff;
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
 .song-title:hover {
+  transform: scale(1.05);
   text-decoration: underline;
 }
 
 .song-timing {
+  color: #333333ff;
   text-align: center;
   font-size: 1rem;
 }

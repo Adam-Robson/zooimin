@@ -1,17 +1,11 @@
-import React from "react";
+import { IBackgroundImageProps } from "@/_types/background-image";
 import "./background-image.css";
-
-interface BackgroundImageProps {
-  imageUrl: string;
-  overlayColor?: string;
-  children?: React.ReactNode;
-}
 
 export default function BackgroundImage({
   imageUrl,
-  overlayColor = "rgba(0, 0, 0, 0.5)",
+  overlayColor = "rgba(100, 100, 100, 0.3)",
   children,
-}: BackgroundImageProps) {
+}: IBackgroundImageProps) {
   return (
     <div
       className="background-container"

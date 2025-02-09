@@ -1,13 +1,12 @@
-
 .background-container {
   position: absolute;
   height: 100%;
   width: 100%;
-  /* background-image: url('/images/primary_spheres.svg'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.7;
+  opacity: 0.8;
   filter: blur(2px);
+  mix-blend-mode:darken;
   z-index: -1;
 }

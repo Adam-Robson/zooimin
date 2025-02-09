@@ -1,9 +1,9 @@
 'use client';
-import { useState } from 'react'
-import AudioPlayer from "@/_components/_audio-player/AudioPlayer"
-import { FiSpeaker, FiX } from 'react-icons/fi';
+import AudioPlayer from "@/_components/_audio-player/AudioPlayer";
 import { AudioProvider } from '@/_contexts/AudioProvider';
-import './buttoncard.css';
+import { useState } from 'react';
+import { FiSpeaker, FiX } from 'react-icons/fi';
+import './button-card.css';
 
 export default function Buttoncard() {
   const [isCardVisible, setCardVisible] = useState<boolean>(false);
@@ -11,7 +11,7 @@ export default function Buttoncard() {
   const onClose = () => setCardVisible(false);
 
   return (
-    <div className="buttoncard can">
+    <div className="buttoncard">
       <button
         onClick={() => setCardVisible(true)}
         className="toggle-player"
