@@ -10,12 +10,6 @@
   color: #333333ff;
 }
 
-@media screen and (min-width = 480px) {
-  .audio-controls {
-    max-width: 420px;
-  }
-}
-
 .song-controls {
   max-width: 280px;
   width: 100%;
@@ -77,10 +71,10 @@ input[type='range'] {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  border: #333333ff 2px solid;
+  border: var(--aaa) 2px solid;
   height: 1rem;
   border-radius: 50px;
-  background-image: linear-gradient(to right, var(--t100), var(--p100));
+  background-image: linear-gradient(to right, var(--aaa), var(--ccc));
   background-repeat: no-repeat;
 }
 
@@ -98,8 +92,8 @@ input[type='range']::-webkit-slider-thumb {
   appearance: none;
   height: 1rem;
   width: 1rem;
-  background-color: var(--b100);
-  border: var(--t100) 2px solid;
+  background-color: var(--hhh);
+  border: var(--bbb) 2px solid;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease-in-out;

@@ -20,9 +20,9 @@ export default function CollectionsCard({
         width={500}
         className="w-full h-48 object-cover hover:scale-105 transition-transform"
       />
-      <div className="p-4">
+      <div className="p-4 card">
         <h2 className="text-lg lg:text-xl font-semibold mb-2">{collection.title}</h2>
-        <p className="text-gray-600 text-sm">Released: {collection.releaseDate}</p>
+        <p className="text-sm">Released: {collection.releaseDate}</p>
       </div>
     </div>
   );

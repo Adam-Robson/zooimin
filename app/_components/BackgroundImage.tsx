@@ -3,7 +3,7 @@ import "./background-image.css";
 
 export default function BackgroundImage({
   imageUrl,
-  overlayColor = "rgba(100, 100, 100, 0.3)",
+  overlayColor,
   children,
 }: IBackgroundImageProps) {
   return (

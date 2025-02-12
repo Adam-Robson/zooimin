@@ -7,6 +7,7 @@ import "./colors.css";
 import "./globals.css";
 import "./queries.css";
 
+
 export const FiraCode = Fira_Code({
   subsets: ["latin"],
   weight: ["300", "400", "500"],

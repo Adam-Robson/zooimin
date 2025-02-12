@@ -6,9 +6,10 @@ import AudioPlaylist from "./AudioPlaylist";
 
 export default function AudioPlayer() {
   const { song, playback, elapsed, duration } = useAudioContext() ?? {};
+  const title = "LE FOG";
   return (
     <div className="audio-player">
-
+      <h2 className="buttoncard-title sm:block md:hidden">{title}</h2>
       <Image
         height={180}
         width={180}

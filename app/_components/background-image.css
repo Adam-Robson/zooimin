@@ -8,5 +8,5 @@
   opacity: 0.8;
   filter: blur(2px);
   mix-blend-mode:darken;
-  z-index: -1;
+  z-index: -999;
 }

@@ -18,7 +18,9 @@ export default function CollectionsPage() {
       <Link href="/" className="back-link">
         <FiChevronLeft />
       </Link>
-      <h1 className="text-4xl font-extralight tracking-widest text-center mb-8">Collections</h1>
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-extralight tracking-widest text-center mb-8">
+        Collections
+      </h1>
       <div className="card-container max-w-lg md:max-w-xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
         {collections.map((collection) => (
           <CollectionsCard

@@ -4,27 +4,26 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="max-w-screen-2xl mx-auto h-screen">
+    <div className="max-w-screen-2xl mx-auto h-screen relative z-0">
       <BackgroundImage imageUrl={'/images/primary_spheres.svg'} />
-      <div className="max-w-60">
-        <Image src="/images/gray_favicon.svg" alt="le fog logo" height={240} width={240} className="w-full p-6" />
-      </div>
-      <div className="flex flex-col justify-start items-end h-full w-full">
-        <div className="max-w-screen-md text-center flex flex-col justify-end items-end p-4">
-          <Link
-            href="/collections"
-            className="w-full text-center text-2xl md:text-3xl tracking-widest font-light"
-          >
-            collections
-          </Link>
-          <div className="h-2 w-40 border-b-2 border-black" />
-          <Link
-            href="/about"
-            className="w-full text-center text-2xl md:text-3xl tracking-widest font-light"
-          >
 
-            about
-          </Link>
+      <div className="max-w-screen-xl mx-auto h-full w-full flex flex-col justify-center items-center relative z-10">
+        <Link href="/">
+          <Image
+            src="/images/gray_favicon.svg"
+            alt="le fog"
+            width={180}
+            height={180}
+            className="absolute top-4 left-0"
+          />
+        </Link>
+
+        <div className="w-full h-1/2 flex flex-col justify-start items-end p-12">
+          <div className="w-40 h-40 flex flex-col justify-evenly items-center">
+            <Link href="/collections">collections</Link>
+            <div className="line" />
+            <Link href="/about">about</Link>
+          </div>
         </div>
       </div>
     </div>
