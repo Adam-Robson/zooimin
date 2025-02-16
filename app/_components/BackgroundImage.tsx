@@ -8,7 +8,7 @@ export default function BackgroundImage({
 }: IBackgroundImageProps) {
   return (
     <div
-      className="background-container"
+      className="background-container opacity-60"
       style={{
         backgroundImage: `url(${imageUrl})`
       }}>

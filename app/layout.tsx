@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import {
-  Fira_Code
+  Fira_Sans
 } from "next/font/google";
-import Buttoncard from "./_components/_button-card/ButtonCard";
 import "./colors.css";
 import "./globals.css";
 import "./queries.css";
 
 
-export const FiraCode = Fira_Code({
+export const FiraSans = Fira_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
   variable: "--font-fira-code",
@@ -27,10 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={FiraCode.variable}
+        className={FiraSans.className}
       >
         {children}
-        <Buttoncard />
       </body>
     </html>
   );

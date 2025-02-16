@@ -2,20 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--iii);
-  color: var(--aaa);
 }
 
 body {
+  background-color: var(--iii);
+  color: var(--aaa);
   height: 100dvh;
   width: 100dvw;
-  font-family: Fira_Code, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fira Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.8;
-  z-index: 1;
 }
 
 a {
@@ -26,7 +29,7 @@ a {
 }
 
 a:hover {
-  color: var(--ddd);
+  color: var(--eee);
   cursor: pointer;
 }
 

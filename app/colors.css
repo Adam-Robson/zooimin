@@ -2,7 +2,7 @@
 
 @media screen and (prefers-color-scheme: light) {
   :root {
-    --aaa: #313638ff;
+    --aaa: #333333ff;
     --bbb: #273043ff;
     --ccc: #4f6367ff;
     --ddd: #7692ffff;
@@ -24,6 +24,6 @@
     --fff: #d77a61ff;
     --ggg: #4f6367ff;
     --hhh: #273043ff;
-    --iii: #313638ff;
+    --iii: #333333ff;
   }
 }

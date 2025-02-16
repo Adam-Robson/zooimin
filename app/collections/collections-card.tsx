@@ -10,7 +10,7 @@ export default function CollectionsCard({
 }) {
   return (
     <div
-      className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+      className="collections-card"
       onClick={onClick}
     >
       <Image
@@ -18,11 +18,11 @@ export default function CollectionsCard({
         alt={collection.title}
         height={500}
         width={500}
-        className="w-full h-48 object-cover hover:scale-105 transition-transform"
+        className="collections-card-image"
       />
-      <div className="p-4 card">
-        <h2 className="text-lg lg:text-xl font-semibold mb-2">{collection.title}</h2>
-        <p className="text-sm">Released: {collection.releaseDate}</p>
+      <div className="collections-card-text">
+        <h2 className="caption-title">{collection.title}</h2>
+        <p className="caption-body">Released: {collection.releaseDate}</p>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ export default function AudioControls() {
 
   return (
     <div className="audio-controls">
-      <section className="song-controls">
+      <section className="playback-controls">
         <button onClick={handlePreviousSong} className="control-button">
           <FiSkipBack size={32} />
           <label className="control-label">Previous</label>
@@ -79,3 +79,4 @@ export default function AudioControls() {
     </div>
   );
 }
+

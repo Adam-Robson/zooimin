@@ -1,61 +1,25 @@
 .audio-player {
   contain: content;
-  background-color: transparent;
   opacity: 1;
-  backdrop-filter: blur(20px);
-  border-radius: 11px;
-  padding: 0.5rem;
   width: 100%;
-  margin: 0 auto;
-  position: relative;
-  transition: all 0.4s ease-in-out;
-  position: relative;
+  height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-}
-
-.player-card.visible {
-  bottom: 20%;
-  opacity: 1;
-  visibility: visible;
-  color: var(--b100);
 }
 
 .now-playing {
-  min-height: 6rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #333333ff;;
+  min-height: 8rem;
+  width: 100%;
   font-weight: 500;
-
-}
-
-.song-title {
-  color: #333333ff;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-
-.song-title:hover {
-  transform: scale(1.05);
-  text-decoration: underline;
+  font-style: bold;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .song-timing {
-  color: #333333ff;
-  text-align: center;
+  width: 100%;
   font-size: 1rem;
-}
-
-.player-logo {
-  max-width: 300px;
-  height: auto;
-  margin-right: 1rem;
-  align-self: center;
 }

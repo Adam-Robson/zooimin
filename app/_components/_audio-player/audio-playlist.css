@@ -1,22 +1,28 @@
-.playlist-list {
+.audio-playlist {
+  width: 100%;
+}
+
+.ul {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: space-between;
+  align-items: flex-start;
 }
 
-.playlist-list-item,
-.playlist-list-button {
+.li,
+.playlist-button {
   list-style: none;
   padding: 0.5rem 0;
-  font-size: 0.8rem;
-  font-weight: 300;
-  color: #333333ff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--aaa);
+  width: 100%;
+  text-align: left;
 }
 
-.playlist-list-item:hover,
-.playlist-list-button:hover {
+.li:hover,
+.playlist-button:hover {
   cursor: pointer;
   text-decoration: underline;
 }

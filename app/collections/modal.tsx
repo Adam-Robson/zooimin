@@ -21,12 +21,12 @@ export default function CollectionModal({
   onClose: () => void;
 }) {
   return (
-    <div className="fixed flex items-center justify-center z-50">
-      <div className="relative">
+    <div className="modal">
+      <div className="">
         <div className="card-overlay">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-2xl"
+            className=""
             aria-label="Close"
           >
             <PiXFill size={32} />
@@ -36,18 +36,18 @@ export default function CollectionModal({
             alt={album.title}
             width={500}
             height={500}
-            className="w-full h-80 object-cover rounded-md mb-2"
+            className=""
           />
-          <h2 className="card-title text-3xl font-bold mb-4">{album.title}</h2>
-          <p className="mb-4 px-8">{album.description}</p>
-          <ul className="space-y-2 w-4/5 mx-auto">
+          <h2 className="card-title ">{album.title}</h2>
+          <p className="">{album.description}</p>
+          <ul className="">
             {album.tracks.map((track) => (
               <li
                 key={track.id}
-                className="flex justify-between items-center rounded p-2"
+                className=""
               >
-                <span className="subpixel-antialiased">{track.title}</span>
-                <span className="subpixel-antialiased">{track.duration}</span>
+                <span className="">{track.title}</span>
+                <span className="">{track.duration}</span>
               </li>
             ))}
 

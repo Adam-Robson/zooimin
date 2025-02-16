@@ -5,7 +5,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8;
   filter: blur(2px);
   mix-blend-mode:darken;
   z-index: -999;

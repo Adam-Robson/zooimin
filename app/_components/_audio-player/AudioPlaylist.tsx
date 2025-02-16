@@ -6,16 +6,16 @@ export default function AudioPlaylist() {
   const { currentIndex, handleSongChange } = useAudioContext() ?? {};
 
   return (
-    <div className="audio-playlist flex flex-col justify-start items-center p-4">
-      <ul className="playlist-list">
+    <div className="audio-playlist">
+      <ul className="ul">
         {playlist.map((track: ISong, index: number) => (
           <li
             key={track.id}
-            className={`playlist-list-item ${currentIndex === index ? "active" : ""
+            className={`li ${currentIndex === index ? "active" : ""
               }`}
           >
             <button
-              className="playlist-button font-semibold"
+              className="playlist-button"
               onClick={() => handleSongChange && handleSongChange(index)}
             >
               {track.title} ({track.album})

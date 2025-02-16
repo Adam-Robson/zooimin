@@ -88,7 +88,12 @@ export function AudioProvider({
         },
         onplay: () => setPlayback(true),
         onpause: () => setPlayback(false),
-        onend: () => handleNextSong(),
+        onend: () => {
+          setPlayback(false);
+          setElapsed('00:00');
+          songRef.current?.stop();
+          handleNextSong();
+        },
         onstop: () => {
           setPlayback(false);
           setElapsed("00:00");

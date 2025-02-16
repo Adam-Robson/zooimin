@@ -14,29 +14,33 @@ export default function CollectionsPage() {
   const [selectedCollection, setSelectedCollection] = useState<ICollection | null>(null);
 
   return (
-    <div className="collections min-h-screen p-8 max-w-screen-sm mx-auto">
+    <div className="collections-page">
       <Link href="/" className="back-link">
         <FiChevronLeft />
       </Link>
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-extralight tracking-widest text-center mb-8">
+      <h1 className="collections-title">
         Collections
       </h1>
-      <div className="card-container max-w-lg md:max-w-xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
-        {collections.map((collection) => (
-          <CollectionsCard
-            key={collection.id}
-            collection={collection}
-            onClick={() => setSelectedCollection(collection)}
-          />
-        ))}
-      </div>
-      {selectedCollection && (
-        <CollectionModal
-          album={selectedCollection}
-          onClose={() => setSelectedCollection(null)}
-        />
-      )}
+      <div className="collections-container">
 
+
+        <div className="card-container">
+          {collections.map((collection) => (
+            <CollectionsCard
+              key={collection.id}
+              collection={collection}
+              onClick={() => setSelectedCollection(collection)}
+            />
+          ))}
+        </div>
+        {selectedCollection && (
+          <CollectionModal
+            album={selectedCollection}
+            onClose={() => setSelectedCollection(null)}
+          />
+        )}
+
+      </div>
     </div>
   );
 }
