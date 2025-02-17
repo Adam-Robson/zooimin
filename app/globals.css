@@ -11,6 +11,25 @@
 body {
   background-color: var(--iii);
   color: var(--aaa);
+  position: relative;
+}
+
+body::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(2px);
+  content: "";
+  background: url('/images/primary_spheres.svg') center/cover no-repeat;
+  z-index: 0;
+}
+
+body {
   height: 100dvh;
   width: 100dvw;
   display: flex;
@@ -29,7 +48,7 @@ a {
 }
 
 a:hover {
-  color: var(--eee);
+  color: var(--fff);
   cursor: pointer;
 }
 
@@ -38,7 +57,7 @@ a:hover {
 }
 
 .back-link:hover {
-  color: var(--ddd);
+  color: var(--fff);
 }
 
 .line {
@@ -73,10 +92,6 @@ input, textarea, select {
 
 textarea {
   resize: vertical;
-}
-
-.navlinks {
-  z-index: 999;
 }
 
 .back-link {

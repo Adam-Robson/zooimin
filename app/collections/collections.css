@@ -1,4 +1,3 @@
-/* General Page Styles */
 .collections-page {
   display: flex;
   flex-direction: column;
@@ -6,9 +5,11 @@
   padding: 20px;
   background-color: var(--iii);
   color: var(--aaa);
+  height: 100%;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .back-link {
@@ -28,34 +29,27 @@
 
 .collections-title {
   font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
   margin-bottom: 1.5rem;
   color: var(--aaa);
 }
 
 .collections-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
   gap: 1.5rem;
   width: 100%;
-  max-width: 1200px;
-  padding: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.6rem;
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-}
 
 .collections-card {
   background: var(--ggg);
-  border-radius: 10px;
-  overflow: hidden;
+  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  text-align: left;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
   width: 100%;
@@ -71,6 +65,7 @@
   width: 100%;
   height: 17.5rem;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .collections-card-text {
@@ -81,15 +76,15 @@
   font-size: 1.3rem;
   font-weight: bold;
   color: var(--aaa);
-  margin-bottom: 0.35rem;
+  text-align: left;
 }
 
 .caption-body {
   font-size: 1rem;
   color: var(--bbb);
+  text-align: left;
 }
 
-/* Modal Overlay */
 .modal {
   position: fixed;
   top: 0;
@@ -100,10 +95,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 2;
 }
 
-/* Modal Card */
 .card-overlay {
   background: var(--iii);
   border-radius: 12px;
@@ -114,13 +108,13 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
+  overflow-y: scroll;
 }
 
 .modal .card-overlay {
   animation: fadeInScale 0.3s ease-in-out;
 }
 
-/* Close Button */
 .card-overlay button {
   position: absolute;
   top: 15px;
@@ -148,7 +142,6 @@
   margin-bottom: 15px;
 }
 
-/* Track List */
 .card-overlay ul {
   list-style: none;
   padding: 0;
@@ -157,8 +150,8 @@
 .card-overlay li {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
   font-size: 1rem;
+  padding: 2px;
   border-bottom: 1px solid #ddd;
 }
 

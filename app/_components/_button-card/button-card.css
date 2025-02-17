@@ -3,7 +3,6 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  z-index: 1000;
   position: fixed;
   bottom: 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -20,13 +19,16 @@
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  z-index: 1001;
+}
+
+.toggle-label {
+  font-size: 1.2rem;
+  color: var(--aaa);
+  margin: 0.5rem;
 }
 
 .buttoncard-overlay {
-  max-width: 700px;
   width: 100%;
-  margin: 0 auto;
   padding: 0.8rem;
   display: flex;
   flex-direction: column;
@@ -35,7 +37,6 @@
   opacity: 0;
   pointer-events: none;
   transform: translateY(100%);
-  z-index: 1002;
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
@@ -69,7 +70,6 @@
   right: 0.75rem;
   cursor: pointer;
   transition: all 0.2s ease;
-  z-index: 1003;
   color: #666;
 }
 

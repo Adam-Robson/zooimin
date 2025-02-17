@@ -21,10 +21,7 @@ export default function CollectionsPage() {
       <h1 className="collections-title">
         Collections
       </h1>
-      <div className="collections-container">
-
-
-        <div className="card-container">
+        <div className="collections-container">
           {collections.map((collection) => (
             <CollectionsCard
               key={collection.id}
@@ -39,8 +36,6 @@ export default function CollectionsPage() {
             onClose={() => setSelectedCollection(null)}
           />
         )}
-
       </div>
-    </div>
   );
 }
