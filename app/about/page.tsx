@@ -1,50 +1,26 @@
-'use client';
-import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { FaInstagram, FaSpotify } from "react-icons/fa";
 import { FiChevronLeft } from "react-icons/fi";
-const images = [
-  "/images/circle.jpg",
-  "/images/roaddogs.jpg",
-];
+import './about.css';
 
 export default function About() {
-  const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-6">
-      <div className="relative max-w-screen-lg mx-auto w-full flex flex-col items-center justify-around p-4 h-screen">
+    <div className="about-page">
+      <div className="about-container">
         <Link href="/" className="back-link">
           <FiChevronLeft />
         </Link>
         <h1 className="text-4xl font-bold mb-6">About</h1>
-        <div className="w-full max-w-xl h-80 overflow-hidden rounded-xl shadow-lg">
-          <Image
-            src={images[currentImage]}
-            width={500}
-            height={500}
-            alt="Band"
-            className="w-full h-full object-cover transition-opacity duration-700"
-          />
-        </div>
         <p className="mt-6 text-lg text-center max-w-2xl">
-          Le Fog is an independent music project blending electrified rock sounds with a kind of folk music. Formed by Adam Robson, Le Fog explores aphoristic lyrics and raw recording techniques, producing a singular sonic experiences.
+          Le Fog is an independent music project by Adam Robson. Blending electrified rock sounds with a kind of folk music. Le Fog explores aphoristic lyrics and raw recording techniques, producing a singular sonic experiences.
         </p>
-        <div className="mt-6 flex justify-between w-80">
-          <a href="https://open.spotify.com/artist/" target="_blank" rel="noopener noreferrer">
-            <FaSpotify className="text-3xl" />
+        <div className="mt-12 flex justify-between w-80">
+          <a href="https://spoti.fi/3QNqMuE" target="_blank" rel="noopener noreferrer">
+            <FaSpotify size={44} />
           </a>
-          <a href="https://instagram.com/your-handle" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="text-3xl" />
+          <a href="https://www.instagram.com/adamrayrobson/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram size={44} />
           </a>
         </div>
       </div>

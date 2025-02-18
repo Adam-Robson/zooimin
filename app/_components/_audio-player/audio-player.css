@@ -11,6 +11,7 @@
 }
 
 .now-playing {
+  color: var(--aaa);
   min-height: 8rem;
   width: 100%;
   font-weight: 500;

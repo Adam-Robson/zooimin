@@ -50,6 +50,7 @@
   position: relative;
   contain: content;
   background-color: #dfffff88;
+  color: var(--aaa);
   backdrop-filter: blur(4px);
   border-radius: 8px;
   margin: 0 auto;
@@ -70,11 +71,11 @@
   right: 0.75rem;
   cursor: pointer;
   transition: all 0.2s ease;
-  color: #666;
+  color: var(--aaa);
 }
 
 .buttoncard-close-button:hover {
-  color: #333;
+  color: var(--bbb);
 }
 
 .buttoncard-title {
@@ -90,6 +91,6 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
-  color: var(--aaa);
-  padding: 0.5rem;
+  color: var(--fff);
+  padding: 1.5rem;
 }

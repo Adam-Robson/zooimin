@@ -55,7 +55,7 @@ input[type='range'] {
   border: var(--bbb) 2px solid;
   height: 1rem;
   border-radius: 50px;
-  background-image: linear-gradient(to right, var(--hhh), var(--bbb));
+  background-image: linear-gradient(to right, var(--fff), var(--bbb));
   background-repeat: no-repeat;
 }
 
@@ -73,7 +73,7 @@ input[type='range']::-webkit-slider-thumb {
   appearance: none;
   height: 1rem;
   width: 1rem;
-  background-color: var(--hhh);
+  background-color: var(--fff);
   border: var(--bbb) 2px solid;
   border-radius: 50%;
   cursor: pointer;
@@ -91,8 +91,8 @@ input[type='range']::-moz-range-track {
 input[type='range']::-moz-range-thumb {
   height: 1rem;
   width: 1rem;
-  background-color: var(--b100);
-  border: var(--t100) 2px solid;
+  background-color: var(--fff);
+  border: var(--fff) 2px solid;
   border-radius: 50%;
   cursor: pointer;
 }
