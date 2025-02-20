@@ -3,15 +3,16 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
+/* Navigation Styles */
 .navlinks-section {
   position: absolute;
-  top: 0;
+  top: 2rem;
   right: 0;
   width: 100%;
   max-width: 150px;
-  height: 15%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -20,17 +21,17 @@
 }
 
 .navlink {
-  font-size: 1.1rem;
   color: var(--bbb);
   text-align: center;
 }
 
 .navlink-border {
-  margin: 1rem;
+  margin: 1.5rem;
   border-bottom: 2px solid var(--bbb);
-  width: 80%;
+  width: 100%;
 }
 
+/* Welcome Section */
 .home-container {
   position: relative;
   width: 100%;
@@ -51,14 +52,12 @@
 }
 
 .welcome {
-  font-size: 2rem;
   font-weight: 400;
   margin: 1.3rem 0;
   text-align: left;
 }
 
 .comment {
-  font-size: 1.1rem;
   color: var(--bbb);
   margin: 1rem 0;
   text-align: left;
@@ -66,10 +65,23 @@
 }
 
 .subcomment {
-  font-size: 0.9rem;
   color: var(--bbb);
   margin: 1rem 0;
   text-align: left;
   font-weight: 300;
   font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .navlinks-section {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width: 100%;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
 }
