@@ -1,6 +1,7 @@
 .audio-controls {
   width: 100%;
   height: 40%;
+  flex: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -12,15 +13,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #353535ff;
+  flex: 1;
 }
 
 .volume-controls {
   width: 100%;
+  flex: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto 2rem auto;
-  padding: 0.5rem;
+  margin: 0 auto;
+  padding: 0.25rem;
+  color: #353535ff;
 }
 
 .control-button {

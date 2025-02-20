@@ -13,16 +13,19 @@
 .li,
 .playlist-button {
   list-style: none;
-  padding: 0.5rem 0;
-  font-size: 0.9rem;
+  padding: 0.25rem 0;
+  font-size: 0.8rem;
   font-weight: 400;
-  color: var(--aaa);
+  color: #353535ff;
   width: 100%;
   text-align: left;
+  transition: font-style 0.3s ease-in-out text-decoration 0.3s ease-in-out;
 }
 
 .li:hover,
 .playlist-button:hover {
   cursor: pointer;
   text-decoration: underline;
+  font-weight: 500;
+
 }

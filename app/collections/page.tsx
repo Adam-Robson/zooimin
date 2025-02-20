@@ -19,23 +19,23 @@ export default function CollectionsPage() {
         <FiChevronLeft />
       </Link>
       <h1 className="collections-title">
-        Collections
+        collections
       </h1>
-        <div className="collections-container">
-          {collections.map((collection) => (
-            <CollectionsCard
-              key={collection.id}
-              collection={collection}
-              onClick={() => setSelectedCollection(collection)}
-            />
-          ))}
-        </div>
-        {selectedCollection && (
-          <CollectionModal
-            album={selectedCollection}
-            onClose={() => setSelectedCollection(null)}
+      <div className="collections-container">
+        {collections.map((collection) => (
+          <CollectionsCard
+            key={collection.id}
+            collection={collection}
+            onClick={() => setSelectedCollection(collection)}
           />
-        )}
+        ))}
       </div>
+      {selectedCollection && (
+        <CollectionModal
+          album={selectedCollection}
+          onClose={() => setSelectedCollection(null)}
+        />
+      )}
+    </div>
   );
 }

@@ -15,13 +15,13 @@ export default function Buttoncard() {
         onClick={() => setCardVisible(true)}
         className="toggle-player"
       >
-        <PiRadioFill size={110} />
+        <PiRadioFill className="radio" />
       </button>
       {isCardVisible && (
         <div className={`buttoncard-overlay ${isCardVisible ? 'visible' : ''}`}>
           <div className="buttoncard-container">
             <button className="buttoncard-close-button" onClick={onClose}>
-              <PiX size={32} />
+              <PiX size={24} />
             </button>
             <div className="buttoncard-content">
               <h2 className="buttoncard-title">{title}</h2>

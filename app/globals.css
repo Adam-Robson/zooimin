@@ -23,11 +23,11 @@ body::before {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  filter: blur(3px);
+  filter: blur(2px);
   opacity: 0.9;
   content: "";
   background: url('/images/primary_spheres.svg') center/cover no-repeat;
-  z-index: 0;
+  z-index: -1;
 }
 
 body {
@@ -42,9 +42,9 @@ body {
 }
 
 a {
+  font-size: 1.1rem;
   color: var(--bbb);
   text-decoration: none;
-  font-size: 1.4rem;
   transition: all 0.3s ease;
 }
 
@@ -54,6 +54,9 @@ a:hover {
 }
 
 .back-link {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
   color: var(--bbb);
 }
 
@@ -63,9 +66,9 @@ a:hover {
 
 button {
   display: inline-block;
-  padding: 10px 15px;
-  font-size: 16px;
-  font-weight: 600;
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
   background: transparent;
   border: none;
   border-radius: 8px;
@@ -90,8 +93,3 @@ textarea {
   resize: vertical;
 }
 
-.back-link {
-  position: absolute;
-  top: 2rem;
-  left: 4rem;
-}

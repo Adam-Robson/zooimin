@@ -4,10 +4,8 @@ import {
 } from "next/font/google";
 import "./colors.css";
 import "./globals.css";
-import "./queries.css";
 
-
-export const FiraSans = Fira_Sans({
+const FiraSans = Fira_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
   variable: "--font-fira-code",
