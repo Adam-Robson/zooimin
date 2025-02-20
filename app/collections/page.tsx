@@ -22,6 +22,7 @@ export default function CollectionsPage() {
         collections
       </h1>
       <div className="collections-container">
+
         {collections.map((collection) => (
           <CollectionsCard
             key={collection.id}

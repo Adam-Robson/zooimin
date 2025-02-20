@@ -1,12 +1,11 @@
 .collections-page {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 1.4rem;
-  background-color: var(--fff);
   color: var(--bbb);
-  height: 100dvh;
+  height: 100%;
   width: 100%;
-  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -24,7 +23,7 @@
 }
 
 .back-link:hover {
-  color: var(--eee);
+  color: var(--ccc);
 }
 
 .collections-title {
@@ -37,6 +36,9 @@
 }
 
 .collections-container {
+  max-width: 800px;
+  position: relative;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-items: center;
