@@ -8,11 +8,17 @@
 }
 
 .radio {
-  font-size: 3.1rem;
+  font-size: 4.1rem;
+  color: var(--ccc);
+  transition: all 0.5s ease;
 }
 
+.radio:hover {
+  cursor: pointer;
+  color: var(--ddd);
+}
 .toggle-player {
-  max-width: 100px;
+  max-width: 200px;
   width: 100%;
   height: auto;
   display: flex;
@@ -22,6 +28,7 @@
   background-color: transparent;
   position: absolute;
   bottom: 0;
+  color: var(--ccc);
 }
 
 .buttoncard-overlay {
@@ -77,7 +84,7 @@
 }
 
 .buttoncard-close-button:hover {
-  color: var(--ccc);
+  color: var(--bbb);
 }
 
 .buttoncard-title {

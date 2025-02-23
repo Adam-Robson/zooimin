@@ -23,6 +23,7 @@ export default function CollectionsPage() {
       </h1>
       <div className="collections-container">
 
+
         {collections.map((collection) => (
           <CollectionsCard
             key={collection.id}
@@ -30,13 +31,13 @@ export default function CollectionsPage() {
             onClick={() => setSelectedCollection(collection)}
           />
         ))}
-      </div>
       {selectedCollection && (
         <CollectionModal
           album={selectedCollection}
           onClose={() => setSelectedCollection(null)}
         />
       )}
+      </div>
     </div>
   );
 }

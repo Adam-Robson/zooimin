@@ -1,19 +1,19 @@
 import Link from 'next/link';
 import Buttoncard from './_components/_button-card/ButtonCard';
-import './home.css';
+import './page.css';
 
 export default function Home() {
   return (
-    <div className="home-page w-full mx-auto p-4 xs:p-8 sm:py-20 md:py-24 lg:py-32 max-w-screen-lg">
+    <div className="home-page xs:p-8 sm:py-20 md:py-24 lg:py-32">
       <div className="home-container">
         <nav className="navlinks-section" aria-label="Primary Navigation">
           <ul className="flex flex-col items-center space-y-4">
             <li>
-              <Link href="/collections" className="navlink text-base xs:text-sm sm:text-lg md:text-2xl">collections</Link>
+              <Link href="/collections" className="navlink text-base sm:text-lg md:text-2xl">collections</Link>
             </li>
               <div className="navlink-border" />
             <li>
-              <Link href="/about" className="navlink text-base xs:text-sm sm:text-lg md:text-2xl">about</Link>
+              <Link href="/about" className="navlink text-base sm:text-lg md:text-2xl">about</Link>
             </li>
           </ul>
         </nav>
