@@ -11,6 +11,21 @@
   overflow: hidden;
 }
 
+.home-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100dvh;
+  height: 100%;
+  z-index: -1;
+  background-image: url('/images/bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
 .navlinks-section {
   position: absolute;
   top: 2rem;
@@ -25,7 +40,7 @@
 }
 
 .navlink {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: var(--ccc);
   text-align: center;
   transition: color 0.5s ease;
@@ -59,12 +74,7 @@
 .welcome-section {
   width: 100%;
   text-align: left;
-}
-
-.welcome {
   color: var(--bbb);
-  font-weight: 400;
-  margin: 1.3rem 0;
   text-align: left;
 }
 
@@ -73,26 +83,88 @@
   margin: 1rem 0;
   text-align: left;
   font-weight: 400;
-}
-
-.subcomment {
-  color: var(--bbb);
-  margin: 1rem 0;
-  text-align: left;
-  font-weight: 300;
-  font-style: italic;
+  font-size: 1.7rem;
 }
 
 @media (max-width: 768px) {
+  .home-page {
+    padding: 0.8rem;
+  }
+
   .navlinks-section {
-    position: absolute;
+    top: 1rem;
+    max-width: 120px;
+  }
+
+  .navlink {
+    font-size: 1.2rem;
+  }
+
+  .navlink-border {
+    margin: 1rem;
+  }
+
+  .home-container {
+    padding: 0.8rem;
+  }
+
+  .comment {
+    font-size: 1.4rem;
+  }
+}
+
+/* Tablet (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home-page {
+    padding: 1rem;
+  }
+
+  .navlinks-section {
+    top: 1.5rem;
+    max-width: 130px;
+  }
+
+  .navlink {
+    font-size: 1.3rem;
+  }
+
+  .navlink-border {
+    margin: 1.3rem;
+  }
+
+  .home-container {
+    padding: 1rem;
+  }
+
+  .comment {
+    font-size: 1.6rem;
+  }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+  .home-page {
+    padding: 1.2rem;
+  }
+
+  .navlinks-section {
     top: 2rem;
-    right: 0;
-    width: 100%;
     max-width: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 1rem;
+  }
+
+  .navlink {
+    font-size: 1.4rem;
+  }
+
+  .navlink-border {
+    margin: 1.5rem;
+  }
+
+  .home-container {
+    padding: 1rem;
+  }
+
+  .comment {
+    font-size: 1.7rem;
   }
 }

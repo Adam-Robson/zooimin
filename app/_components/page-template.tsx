@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { PiSpotifyLogoFill, PiSoundcloudLogoFill, PiCaretDoubleLeftBold } from "react-icons/pi";
+import {
+    PiSpotifyLogoFill,
+    PiSoundcloudLogoFill,
+    PiCaretLeftBold
+} from "react-icons/pi";
 import { FaBandcamp } from "react-icons/fa";
 import './page-template.css';
 
@@ -15,39 +19,35 @@ export default function PageTemplate({
     children
 }: PageTemplateProps) {
     return (
-        <div className="page-template" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div
+            className="page-template"
+            style={{backgroundImage: `url('${backgroundImage}')`}}
+        >
             <header className="header">
                 <div className="back-button-container">
-                <Link href="/" className="back-button">
-                    <PiCaretDoubleLeftBold size="32"/>
-                </Link>
+                    <Link
+                        href="/"
+                        className="back-button"
+                    >
+                        <PiCaretLeftBold size="32" />
+                    </Link>
                 </div>
                 <h1 className="title">{title}</h1>
             </header>
-            <main className="main">
-                {children}
-            </main>
+            <main className="main">{children}</main>
             <footer className="footer">
                 <div className="footer-container">
-                    <Link href="https://spoti.fi/3QNqMuE" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://spoti.fi/3QNqMuE" target="_blank" rel="noopener noreferrer" className="switch">
                         <PiSpotifyLogoFill size={44} />
                     </Link>
-                    <Link href="https://soundcloud.com/lefogsongs" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://soundcloud.com/lefogsongs" target="_blank" rel="noopener noreferrer" className="switch">
                         <PiSoundcloudLogoFill size={44} />
                     </Link>
-                    <Link href="https://lefogsong.bandcamp.com/" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://lefogsong.bandcamp.com/" target="_blank" rel="noopener noreferrer" className="switch">
                         <FaBandcamp size={44} />
                     </Link>
-
                 </div>
             </footer>
-
-
-
         </div>
-
-
-
-
     )
 }

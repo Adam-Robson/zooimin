@@ -1,16 +1,5 @@
-.collections-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 1.4rem;
-  color: var(--bbb);
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .collections-container {
-  max-width: 1000px;
+  max-width: 900px;
   position: relative;
   height: 100%;
   display: grid;
@@ -30,9 +19,6 @@
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-/*
-
-} */
 
 .collections-card {
   background: var(--ggg);
@@ -56,6 +42,7 @@
   height: 13.5rem;
   object-fit: cover;
   border-radius: 8px;
+  border: var(--bbb);
 }
 
 .collections-card-text {
