@@ -4,8 +4,8 @@ import './page.css';
 
 export default function Home() {
   return (
-    <div className="home-page xs:p-8 sm:py-20 md:py-24 lg:py-32">
-      <div className="home-background"></div>
+    <div className="home-page">
+      <div className="home-background" style={{ backgroundImage: "url('/images/bg.svg')" }}></div>
       <div className="home-container">
         <nav className="navlinks-section" aria-label="Primary Navigation">
           <ul className="flex flex-col items-center space-y-4">
