@@ -10,7 +10,7 @@ export default {
     extend: {
       colors: {
         background: "var(--bbb)",
-        foreground: "var(--fff)",
+        foreground: "var(--eee)",
       },
       screens: {
         xs: '420px',

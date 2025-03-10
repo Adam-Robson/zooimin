@@ -21,7 +21,7 @@
 }
 
 .collections-card {
-  background: var(--ggg);
+  background: var(--eee);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: left;
@@ -76,7 +76,7 @@
 }
 
 .card-overlay {
-  background: var(--ggg);
+  background: var(--eee);
   border-radius: 8px;
   padding: 1.3rem;
   width: 90%;

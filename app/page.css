@@ -1,6 +1,6 @@
 .home-page {
   height: 100dvh;
-  max-width: 1200px;
+  max-width: 2000px;
   width: 100%;
   margin: 0 auto;
   padding: 1.2rem;
@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  background-color: var(--eee);
 }
 
 .home-background {
@@ -18,10 +19,11 @@
   width: 100%;
   min-height: 100dvh;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
+  background-image: url('/images/bg.svg');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: left;
+  background-repeat: repeat;
   opacity: 0.2;
 }
 
@@ -40,7 +42,7 @@
 
 .navlink {
   font-size: 1.4rem;
-  color: var(--ccc);
+  color: var(--bbb);
   text-align: center;
   transition: color 0.5s ease;
 }
@@ -52,7 +54,7 @@
 
 .navlink-border {
   margin: 1.5rem;
-  border-bottom: 2px solid var(--ccc);
+  border-bottom: 2px solid var(--bbb);
   width: 100%;
 }
 
@@ -70,14 +72,14 @@
   justify-content: center;
 }
 
-.welcome-section {
+.intro-section {
   width: 100%;
   text-align: left;
   color: var(--bbb);
   text-align: left;
 }
 
-.comment {
+.intro {
   color: var(--bbb);
   margin: 1rem 0;
   text-align: left;

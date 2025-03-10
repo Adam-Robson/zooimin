@@ -9,7 +9,6 @@
 }
 
 body {
-  background-color: var(--ggg);
   color: var(--bbb);
   position: relative;
   min-height: 100dv;
@@ -67,7 +66,7 @@ input, textarea, select {
   font-family: inherit;
   font-size: 1rem;
   padding: 0.5rem;
-  border: 1px solid var(--ggg);
+  border: 1px solid var(--eee);
   border-radius: 8px;
 }
 

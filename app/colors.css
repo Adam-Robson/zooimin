@@ -1,23 +1,19 @@
 @media screen and (prefers-color-scheme: light) {
   :root {
-    --aaa: #000000ff;
-    --bbb: #d2d7dfff;
-    --ccc: #cfd7c7ff;
-    --ddd: #a37871ff;
-    --eee: #7c809bff;
-    --fff: #353535ff;
-    --ggg: #ffffffff;
+    --aaa: #d2d7dfff;
+    --bbb: #cfd7c7ff;
+    --ccc: #a37871ff;
+    --ddd: #7c809bff;
+    --eee: #353535ff;
   }
 }
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --aaa: #000000ff;
-    --bbb: #353535ff;
-    --ccc: #7c809bff;
-    --ddd: #a37871ff;
-    --eee: #cfd7c7ff;
-    --fff: #d2d7dfff;
-    --ggg: #ffffffff;
+    --aaa: #353535ff;
+    --bbb: #7c809bff;
+    --ccc: #a37871ff;
+    --ddd: #cfd7c7ff;
+    --eee: #d2d7dfff;
   }
 }
