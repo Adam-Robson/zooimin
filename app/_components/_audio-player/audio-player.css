@@ -11,12 +11,15 @@
 }
 
 .now-playing {
-  min-height: 8rem;
+  flex: 1;
+  color: #353535ff;
+  min-height: 6rem;
   width: 100%;
   font-weight: 500;
   font-style: bold;
   font-size: 1.5rem;
   text-align: center;
+  padding-top: 1.5rem;
 }
 
 .song-timing {

@@ -1,0 +1,11 @@
+.about-text {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--bbb);
+  text-align: left;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  gap: 1.5rem;
+}

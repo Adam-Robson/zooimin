@@ -6,7 +6,7 @@ export const collections: ICollection[] = [
     title: 'left static & at ease',
     cover: '/images/left static & at ease.png',
     releaseDate: '2020',
-    description: 'This is the first full length collection released by LE FOG and was recorded in Portland, OR.',
+    description: 'This is the first release from LE FOG.',
     tracks: [
       {
         id: 1,
@@ -75,7 +75,7 @@ export const collections: ICollection[] = [
     title: 'seems real',
     cover: '/images/seems real.png',
     releaseDate: '2020',
-    description: 'This is the second full length collection released by LE FOG and was recorded in Portland, OR.',
+    description: 'This is the second release from LE FOG.',
     tracks: [
       {
         id: 1,
@@ -134,7 +134,7 @@ export const collections: ICollection[] = [
     title: 'three',
     cover: '/images/three.png',
     releaseDate: '2022',
-    description: 'This is the third full length collection released by LE FOG and was recorded in Portland, OR.',
+    description: 'This is the third release from LE FOG.',
     tracks: [
       {
         id: 1,
@@ -203,7 +203,7 @@ export const collections: ICollection[] = [
     title: 'for before i forget',
     cover: '/images/for before i forget.png',
     releaseDate: '2024',
-    description: 'This is the fourth full length collection released by LE FOG and was recorded in Portland, OR.',
+    description: 'This is the fourth release from LE FOG.',
     tracks: [
       {
         id: 1,

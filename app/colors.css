@@ -1,29 +1,19 @@
-
-
 @media screen and (prefers-color-scheme: light) {
   :root {
-    --aaa: #333333ff;
-    --bbb: #273043ff;
-    --ccc: #4f6367ff;
-    --ddd: #7692ffff;
-    --eee: #94524aff;
-    --fff: #d77a61ff;
-    --ggg: #e0dfd5ff;
-    --hhh: #cfd7c7ff;
-    --iii: #e8e9ebff;
+    --aaa: #d2d7dfff;
+    --bbb: #cfd7c7ff;
+    --ccc: #a37871ff;
+    --ddd: #7c809bff;
+    --eee: #353535ff;
   }
 }
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --aaa: #e8e9ebff;
-    --bbb: #cfd7c7ff;
-    --ccc: #e0dfd5ff;
-    --ddd: #7692ffff;
-    --eee: #94524aff;
-    --fff: #d77a61ff;
-    --ggg: #4f6367ff;
-    --hhh: #273043ff;
-    --iii: #333333ff;
+    --aaa: #353535ff;
+    --bbb: #7c809bff;
+    --ccc: #a37871ff;
+    --ddd: #cfd7c7ff;
+    --eee: #d2d7dfff;
   }
 }
