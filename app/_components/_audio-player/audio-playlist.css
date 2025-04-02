@@ -16,7 +16,7 @@
   padding: 0.25rem 0;
   font-size: 0.8rem;
   font-weight: 400;
-  color: #353535ff;
+  color: var(--color-background);
   width: 100%;
   text-align: left;
   transition: font-style 0.3s ease-in-out text-decoration 0.3s ease-in-out;
