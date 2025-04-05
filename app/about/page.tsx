@@ -1,31 +1,36 @@
 import Link from 'next/link';
 import React from 'react';
-import { LiaBandcamp, LiaSpotify } from 'react-icons/lia';
+import { LiaInstagram, LiaSpotify } from 'react-icons/lia';
 import './about.css';
-const AboutPage = () => {
+
+
+export default function AboutPage() {
   return (
     <section className="about-page">
       <div className="about-container">
         <h1 className="about-title">About</h1>
         <p className="about-description">
-        Le Fog is an independent music project founded in 2020 by Adam Robson that combines raw recording techniques, aphoristic lyrics, electrified rock, contemporary folk, and electronic music. Created in Portland, Oregon.
+        Le Fog is an independent music project, founded in 2020, by Adam Robson.
+        Blending electrified rock sounds with contemporary folk and electronic
+            music, Le Fog explores aphoristic lyrics and raw recording techniques,
+            producing a singular sound. Made in Portland, Oregon.
         </p>
-        <a href="mailto:contact@lefog.xyz" className="about-contact">
+        <a href="mailto:lefogsongs@gmail.com" className="about-contact">
           Get in Touch via Email
         </a>
         <div className="social-links">
           <Link
-            href="https://bandcamp.com/yourprofile"
+            href="https://www.instagram.com/adamrayrobson/"
             target="_blank"
             rel="noopener noreferrer"
-            className="social-link bandcamp"
-            aria-label="Visit us on Bandcamp"
+            className="social-link instagram"
+            aria-label="Visit us on Instagram"
           >
            
-            <LiaBandcamp size={60} />
+            <LiaInstagram size={60} />
           </Link>
           <Link
-            href="https://open.spotify.com/artist/yourprofile"
+            href="https://spoti.fi/3QNqMuE"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link spotify"
@@ -37,6 +42,4 @@ const AboutPage = () => {
       </div>
     </section>
   );
-};
-
-export default AboutPage;
+}
