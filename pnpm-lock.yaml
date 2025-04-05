@@ -14,9 +14,15 @@ importers:
       howler:
         specifier: 2.2.4
         version: 2.2.4
+      lucide-react:
+        specifier: 0.487.0
+        version: 0.487.0(react@19.0.0)
       next:
         specifier: 15.2.3
         version: 15.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      postcss:
+        specifier: 8.5.3
+        version: 8.5.3
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -31,7 +37,7 @@ importers:
         specifier: ^3
         version: 3.2.0
       '@tailwindcss/postcss':
-        specifier: ^4
+        specifier: ^4.1.1
         version: 4.1.1
       '@types/howler':
         specifier: 2.2.12
@@ -52,7 +58,7 @@ importers:
         specifier: 15.2.4
         version: 15.2.4(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3)
       tailwindcss:
-        specifier: ^4
+        specifier: ^4.1.1
         version: 4.1.1
       typescript:
         specifier: ^5
@@ -1192,6 +1198,11 @@ packages:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
 
+  lucide-react@0.487.0:
+    resolution: {integrity: sha512-aKqhOQ+YmFnwq8dWgGjOuLc8V1R9/c/yOd+zDY4+ohsR2Jo05lSGc3WsstYPIzcTpeosN7LoCkLReUUITvaIvw==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
@@ -1330,8 +1341,8 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.1:
-    resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
+  postcss@8.5.3:
+    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -1865,7 +1876,7 @@ snapshots:
       '@alloc/quick-lru': 5.2.0
       '@tailwindcss/node': 4.1.1
       '@tailwindcss/oxide': 4.1.1
-      postcss: 8.5.1
+      postcss: 8.5.3
       tailwindcss: 4.1.1
 
   '@types/estree@1.0.6': {}
@@ -2875,6 +2886,10 @@ snapshots:
     dependencies:
       js-tokens: 4.0.0
 
+  lucide-react@0.487.0(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+
   math-intrinsics@1.1.0: {}
 
   merge2@1.4.1: {}
@@ -3017,7 +3032,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.5.1:
+  postcss@8.5.3:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1

@@ -1,0 +1,179 @@
+.collections-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  
+  .collections-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-secondary);
+  }
+  
+  .collections-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0.6rem;
+  }
+  
+  
+  .collections-card {
+    background: var(--color-muted);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .collections-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .collections-card-image {
+    width: 100%;
+    height: 17.5rem;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .collections-card-text {
+    padding: 1rem;
+  }
+  
+  .caption-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--color-secondary);
+    text-align: left;
+  }
+  
+  .caption-body {
+    font-size: 1rem;
+    color: var(--color-text);
+    text-align: left;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .card-overlay {
+    background: var(--color-tertiary);
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: scroll;
+  }
+  
+  .modal .card-overlay {
+    animation: fadeInScale 0.3s ease-in-out;
+  }
+  
+  .card-overlay button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-overlay p {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 15px;
+  }
+  
+  .card-overlay ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card-overlay li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 2px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-overlay li:last-child {
+    border-bottom: none;
+  }
+  
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .collections-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .collections-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .collections-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .collections-title {
+      font-size: 1.8rem;
+    }
+  
+    .back-link {
+      font-size: 1.2rem;
+    }
+  
+    .card-overlay {
+      width: 95%;
+      padding: 15px;
+    }
+  }

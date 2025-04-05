@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Fira_Code, Fira_Mono, Fira_Sans } from "next/font/google";
-import "./colors.css";
+import PageTransition from "./_components/page-transition";
+import Navigation from "./_components/navigation";
+import LayoutLayer from "./_components/layout-layer";
+
 import "./globals.css";
+
 
 const firaSans = Fira_Sans({
   subsets: ["latin"],
@@ -36,7 +40,12 @@ export default function RootLayout({
       <body
         className={`${firaSans.variable}${firaCode.variable}${firaMono.variable} antialiased`}
       >
-        {children}
+        <Navigation />
+        <PageTransition>
+          <LayoutLayer>
+            {children}
+          </LayoutLayer>
+        </PageTransition>
       </body>
     </html>
   );

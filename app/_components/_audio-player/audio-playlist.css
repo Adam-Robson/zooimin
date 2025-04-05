@@ -1,7 +1,9 @@
 .audio-playlist {
   width: 100%;
+  padding: 2rem;
 }
 
+/* If these are list elements, consider using the element selectors (ul, li) or unique classes */
 .ul {
   width: 100%;
   display: flex;
@@ -19,7 +21,7 @@
   color: var(--color-background);
   width: 100%;
   text-align: left;
-  transition: font-style 0.3s ease-in-out text-decoration 0.3s ease-in-out;
+  transition: font-style 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
 }
 
 .li:hover,
@@ -27,5 +29,5 @@
   cursor: pointer;
   text-decoration: underline;
   font-weight: 500;
-
 }
+

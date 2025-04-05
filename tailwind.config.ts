@@ -1,16 +1,15 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  darkMode: "class",
+  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      backdropBlur: {
+        xs: '2px',
+      },
       colors: {
-        background: "var(--bbb)",
-        foreground: "var(--eee)",
+        'blue-50': '#eff6ff',
       },
       screens: {
         xs: '420px',

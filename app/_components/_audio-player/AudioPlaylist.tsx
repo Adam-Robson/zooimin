@@ -1,5 +1,5 @@
 import { playlist, useAudioContext } from "@/_contexts/AudioProvider";
-import { ISong } from "@/_types/audio-provider";
+import { Track } from "@/_data/_collections";
 import "./audio-playlist.css";
 
 export default function AudioPlaylist() {
@@ -8,7 +8,7 @@ export default function AudioPlaylist() {
   return (
     <div className="audio-playlist">
       <ul className="ul">
-        {playlist.map((track: ISong, index: number) => (
+        {playlist.map((track: Track, index: number) => (
           <li
             key={track.id}
             className={`li ${currentIndex === index ? "active" : ""
