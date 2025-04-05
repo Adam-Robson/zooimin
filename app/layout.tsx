@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${firaSans.variable}${firaCode.variable}${firaMono.variable} antialiased`}
+        className={`${firaSans.variable} ${firaCode.variable} ${firaMono.variable} antialiased`}
       >
         <Navigation />
         <PageTransition>
