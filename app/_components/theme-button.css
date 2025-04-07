@@ -1,0 +1,19 @@
+.theme-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+}
+
+.theme-button .icon {
+  width: 24px;
+  height: 24px;
+}

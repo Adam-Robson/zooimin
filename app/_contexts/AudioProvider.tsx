@@ -9,11 +9,46 @@ import React, {
   useRef,
   useState,
 } from "react";
+export interface ISong {
+  id: number;
+  title: string;
+  album: string;
+  artist: string;
+  url: string;
+  duration: string;
+}
 
-import type {
-  IAudioContext,
-  IAudioProviderProps,
-} from "@/_types/audio-provider";
+export interface IAudioContext {
+  playlist: ISong[];
+  song: ISong;
+  currentIndex: number;
+  playback: boolean;
+  handleVolumeChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  handleMuteChange: () => void;
+  handlePlayPause: () => void;
+  handleSongChange: (newIndex: number) => void;
+  handlePreviousSong: () => void;
+  handleNextSong: () => void;
+  volumeChangeHandler: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  elapsed: string;
+  duration: string;
+  volume: number;
+  setVolume: React.Dispatch<React.SetStateAction<number>>;
+  mute: boolean;
+  setMute: React.Dispatch<React.SetStateAction<boolean>>;
+  volumeSliderRef: React.RefObject<HTMLInputElement | null>;
+}
+
+export interface IAudioProviderProps {
+  children: React.ReactNode;
+  initialVolume?: number;
+  initialIndex?: number;
+}
+
+export interface IAudioPlayerToggleProps {
+  isVisible: boolean;
+  setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
 export const playlist = [
   {
@@ -90,7 +125,7 @@ export function AudioProvider({
         onpause: () => setPlayback(false),
         onend: () => {
           setPlayback(false);
-          setElapsed('00:00');
+          setElapsed("00:00");
           songRef.current?.stop();
           handleNextSong();
         },
@@ -199,11 +234,14 @@ export function AudioProvider({
     handleSongChange(nextIndex);
   }, [currentIndex, handleSongChange]);
 
-  const volumeChangeHandler = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-    handleVolumeChange?.(event);
-    const value = ((volume ?? 0) * 100).toFixed(2);
-    event.target.style.backgroundSize = `${value}% 100%`;
-  }, [volume, handleVolumeChange]);
+  const volumeChangeHandler = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      handleVolumeChange?.(event);
+      const value = ((volume ?? 0) * 100).toFixed(2);
+      event.target.style.backgroundSize = `${value}% 100%`;
+    },
+    [volume, handleVolumeChange]
+  );
 
   useEffect(() => {
     if (volumeSliderRef?.current) {

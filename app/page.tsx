@@ -1,32 +1,18 @@
-import Link from "next/link";
-import Buttoncard from "./_components/_button-card/ButtonCard";
-import "./page.css";
+import Image from "next/image";
+import PlayerButton from "@/_components/player-button";
+import "./globals.css";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="home-page">
-      <div className="home-background"></div>
-      <div className="home-container">
-        <nav className="navlinks-section" aria-label="Primary Navigation">
-          <ul className="flex flex-col items-center space-y-4">
-            <li>
-              <Link href="/collections" className="navlink">
-                collections
-              </Link>
-            </li>
-            <div className="navlink-border" />
-            <li>
-              <Link href="/about" className="navlink">
-                about
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <section className="intro-section">
-          <p className="intro">This is the website for Le Fog.</p>
-        </section>
+      <div className="root">
+        <Image 
+          src="/images/logo/typewriter.svg" 
+          alt="main image lefog logo" 
+          aria-label="Main image le fog logo" 
+          width={700} 
+          height={700}
+        />
+        <PlayerButton /> 
       </div>
-      <Buttoncard />
-    </div>
   );
 }
